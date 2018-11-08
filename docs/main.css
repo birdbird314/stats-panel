@@ -8,7 +8,7 @@ body {
 }
 
 main {
-  margin-top: 4em;
+  margin-top: 1em;
   display: grid;
   grid-template-columns: 50% 50%;
   text-align: center;
@@ -77,4 +77,8 @@ main div:nth-child(3) h1 {
 
 main div:nth-child(4) h1 {
   color: #DD9400;
+}
+
+@media only screen and (min-width: 768px) {
+  margin-top: 1em;
 }

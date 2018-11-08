@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+main {
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+
+main div {
+  padding: 1em;
+}
+
+/* top row */
+main div:nth-child(1), main div:nth-child(2) {
+  /* border-bottom: 1px #000 solid; */
+  padding-top: 3em;
+  position: relative;
+}
+
+main div:nth-child(1)::after, main div:nth-child(2)::after {
+  content: "";
+  border-bottom: 1px #000 solid;
+  position: absolute;
+  left: 2.5em;
+  right: 2.5em;
+  bottom: 0;
+}
+
+/* bottom row */
+main div:nth-child(3), main div:nth-child(4) {
+  padding-bottom: 3em;
+}
+
+main div:nth-child(odd) {
+  border-right: 1px #000 solid;
+}
+
+main div * {
+  margin: .3em;
+}
+
+main div p {
+  color: #7F7F7F;
+  line-height: .9em;
+  font-size: 1.5em;
+}
+
+main div h1 {
+  font-size: 1.5em;
+}
+
+.amount {
+  font-size: 3em;
+  margin: 0;
+}
+
+/* colors */
+main div:nth-child(1) h1 {
+  color: #016FDE;
+}
+
+main div:nth-child(2) h1 {
+  color: #86C351;
+}
+
+main div:nth-child(3) h1 {
+  color: #AB47CB;
+}
+
+main div:nth-child(4) h1 {
+  color: #DD9400;
+}
